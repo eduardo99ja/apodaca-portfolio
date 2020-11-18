@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+const { default: Sidebar } = require('./components/Sidebar')
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-lg-3 '>
+            <div className='app__sidebar'>
+              <Sidebar />
+            </div>
+          </div>
+          <div className='col-lg-9 app__main-content'>main</div>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

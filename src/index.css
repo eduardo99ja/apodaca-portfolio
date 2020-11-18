@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap');
+
+body{
+    background-image: linear-gradient(#283c86,#45a247);
+    background-attachment: fixed;
+}
+.container{
+    margin-top: 50px;
+}
+.row{
+    height: 90vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app__sidebar{
+    background-color: #ffff;
+    height: 100%;
+    border-radius: 20px;
+    padding: 25px 15px;
+    box-shadow: 0 0 10px gray;
+}
+.app__main-content{
+    background-color: #ffff;
+    border-radius: 20px;
+    padding: 25px 15px;
+    box-shadow: 0 0 10px gray;
 }
