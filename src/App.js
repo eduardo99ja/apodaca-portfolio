@@ -1,3 +1,4 @@
+const { default: Navbar } = require('./components/Navbar')
 const { default: Sidebar } = require('./components/Sidebar')
 
 function App() {
@@ -8,7 +9,9 @@ function App() {
           <div className='col-lg-3 '>
             <Sidebar />
           </div>
-          <div className='col-lg-9 app__main-content'>main</div>
+          <div className='col-lg-9 app__main-content'>
+            <Navbar />
+          </div>
         </div>
       </div>
     </div>

@@ -82,7 +82,7 @@ a:hover {
   transition: all 3s linear;
 }
 .sidebar__email:hover{
-    transform: scale(1.05);
+    background-image: linear-gradient(to right bottom, #45a247,#283c86);
 }
 
 .sidebar__github:hover,
@@ -95,4 +95,32 @@ a:hover {
     .app__main-content{
         margin: 30px 0;
     }
+}
+
+
+/* navbar */
+
+
+.navbar__items{
+  display: flex;
+}
+.navbar__active{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #354358;
+  border-bottom: 4px solid #45a247;
+}
+
+.navbar__item{
+  margin-right: 20px;
+  text-decoration: none;
+  color: #354358;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.navbar__item:hover{
+  background: -webkit-linear-gradient(#283c86, #45a247);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
