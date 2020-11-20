@@ -1,4 +1,4 @@
-import portfolio from '../../assets/projects_images/portfolio.jpg'
+import portfolio from '../../assets/projects_images/portfolio.JPG'
 
 const data_projects = [
   {

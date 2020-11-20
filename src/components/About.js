@@ -1,6 +1,7 @@
 import React from 'react'
 import api from '../assets/icons/api.svg'
 import SkillCard from './SkillCard'
+import { motion } from 'framer-motion'
 
 const skills = [
   {
@@ -28,9 +29,26 @@ const skills = [
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates mollitia',
   },
 ]
+const about_variant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      dealy: 0.2,
+      duration: 0.6,
+    },
+  },
+}
 const About = () => {
   return (
-    <div className='about'>
+    <motion.div
+      className='about'
+      variants={about_variant}
+      initial='hidden'
+      animate='visible'
+    >
       <h6 className='about__intro'>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
         mollitia optio architecto, obcaecati excepturi odit asperiores atque
@@ -45,7 +63,7 @@ const About = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

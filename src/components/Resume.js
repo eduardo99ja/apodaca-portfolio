@@ -1,6 +1,7 @@
 import React from 'react'
 import react from '../assets/icons/react.svg'
 import Bar from './Bar'
+import { motion } from 'framer-motion'
 const languages = [
   {
     icon: react,
@@ -36,10 +37,26 @@ const tools = [
     level: '60',
   },
 ]
-
+const resume_variant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      dealy: 0.2,
+      duration: 0.6,
+    },
+  },
+}
 const Resume = () => {
   return (
-    <div className='container resume'>
+    <motion.div
+      className='container resume'
+      variants={resume_variant}
+      initial='hidden'
+      animate='visible'
+    >
       <div className='row'>
         <div className='col-lg-6 resume-card'>
           <h4 className='resume-card__heading'>Education</h4>
@@ -82,7 +99,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

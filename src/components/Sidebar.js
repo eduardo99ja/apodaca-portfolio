@@ -6,13 +6,32 @@ import pin from '../assets/icons/pin.svg'
 import tie from '../assets/icons/tie.svg'
 import mightycoder from '../assets/mightycoder.svg'
 import CV from '../assets/CV.pdf'
+import { motion } from 'framer-motion'
 
 const Sidebar = () => {
   const handleContactMe = () => {
     window.open('mailto:eduardo1ja99@gmail.com')
   }
+  const sidebar_variant = {
+    hidden: {
+      x: '-20vw',
+    },
+    visible: {
+      x: 0,
+      transition: {
+        dealy: 0.1,
+        duration: 0.5,
+        type: 'spring',
+      },
+    },
+  }
   return (
-    <div className='sidebar'>
+    <motion.div
+      className='sidebar'
+      variants={sidebar_variant}
+      initial='hidden'
+      animate='visible'
+    >
       <img src={mightycoder} alt='avatar' className='sidebar__avatar' />
       <div className='sidebar__name'>
         Eduardo <span>Apodaca</span>
@@ -49,7 +68,7 @@ const Sidebar = () => {
       <div className='sidebar__item sidebar__email' onClick={handleContactMe}>
         Get in touch
       </div>
-    </div>
+    </motion.div>
   )
 }
 
