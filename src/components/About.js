@@ -8,7 +8,7 @@ const skills = [
     icon: api,
     title: 'lorem ipsum dolor sit.',
     about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates mollitia',
+      ['Lorem ipsum dolor sit, amet consectetur adipisicing elit.',<strong> Voluptates mollitia</strong> ],
   },
   {
     icon: api,
@@ -36,7 +36,7 @@ const about_variant = {
   visible: {
     opacity: 1,
     transition: {
-      dealy: 0.2,
+      delay: 0.2,
       duration: 0.6,
     },
   },

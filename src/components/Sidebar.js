@@ -19,7 +19,7 @@ const Sidebar = () => {
     visible: {
       x: 0,
       transition: {
-        dealy: 0.1,
+        delay: 0.1,
         duration: 0.5,
         type: 'spring',
       },

@@ -25,7 +25,7 @@ const Navbar = () => {
       y: 0,
       opacity: 1,
       transition: {
-        dealy: 0.2,
+        delay: 0.2,
         duration: 0.7,
         type: 'spring',
       },

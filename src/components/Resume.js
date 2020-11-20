@@ -44,7 +44,7 @@ const resume_variant = {
   visible: {
     opacity: 1,
     transition: {
-      dealy: 0.2,
+      delay: 0.2,
       duration: 0.6,
     },
   },
