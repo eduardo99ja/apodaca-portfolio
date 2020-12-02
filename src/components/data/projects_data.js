@@ -1,61 +1,59 @@
 import portfolio from '../../assets/projects_images/portfolio.JPG'
+import mall from '../../assets/projects_images/mall.JPG'
+import journal_app from '../../assets/projects_images/journal_app.JPG'
+import MernTask from '../../assets/projects_images/MernTask.JPG'
+import amazon_clone from '../../assets/projects_images/amazon_clone.JPG'
+import proshop from '../../assets/projects_images/proshop.JPG'
 
 const data_projects = [
   {
-    name: 'Dev Portfolio 1',
+    name: 'Dev Portfolio',
     image: portfolio,
-    deployed_url: '',
+    deployed_url: 'https://apodaca-portfolio.netlify.app',
+    github_url: 'https://github.com/eduardo99ja/apodaca-portfolio',
+    category: ['react.js'],
+  },
+  {
+    name: 'Mall',
+    image: mall,
+    deployed_url: 'https://silly-lalande-0025b4.netlify.app',
     github_url: '',
-    category: ['vanilla'],
+    category: ['react.js'],
   },
   {
-    name: 'Dev Portfolio 2',
-    image: portfolio,
-    deployed_url: '',
-    github_url: '',
-    category: [''],
+    name: 'Journal App',
+    image: journal_app,
+    deployed_url: 'https://determined-ptolemy-93e5ab.netlify.app',
+    github_url: 'https://github.com/eduardo99ja/journal-app',
+    category: ['react.js', 'firebase'],
   },
   {
-    name: 'Dev Portfolio 3',
-    image: portfolio,
-    deployed_url: '',
-    category: ['vanilla','react.js'],
+    name: 'Amazon Clone',
+    image: amazon_clone,
+    deployed_url: 'https://vigilant-mcnulty-b8f916.netlify.app/',
+    github_url: 'https://github.com/eduardo99ja/ecommerce-amazon-clone',
+    category: ['react.js', 'firebase'],
   },
   {
-    name: 'Dev Portfolio 4',
-    image: portfolio,
-    deployed_url: '',
-    category: ['html_css'],
+    name: 'Proshop',
+    image: proshop,
+    deployed_url: 'https://proshop-apo.herokuapp.com/',
+    github_url: 'https://github.com/eduardo99ja/Proshop',
+    category: ['react.js', 'node.js', 'mongoDB'],
   },
   {
-    name: 'Dev Portfolio 5',
-    image: portfolio,
-    deployed_url: '',
-    category: ['vanilla'],
+    name: 'MERN TASKS (front)',
+    image: MernTask,
+    deployed_url: 'https://inspiring-hamilton-e2a8a1.netlify.app/',
+    github_url: 'https://github.com/eduardo99ja/front-tareas',
+    category: ['react.js'],
   },
   {
-    name: 'Dev Portfolio 6',
-    image: portfolio,
-    deployed_url: '',
-    category: ['node.js','mongoDB'],
-  },
-  {
-    name: 'Dev Portfolio 7',
-    image: portfolio,
-    deployed_url: '',
-    category: ['vanilla'],
-  },
-  {
-    name: 'Dev Portfolio 8',
-    image: portfolio,
-    deployed_url: '',
-    category: ['vanilla'],
-  },
-  {
-    name: 'Dev Portfolio 9',
-    image: portfolio,
-    deployed_url: '',
-    category: [],
+    name: 'MERN TASKS (back)',
+    image: MernTask,
+    deployed_url: 'https://inspiring-hamilton-e2a8a1.netlify.app/',
+    github_url: 'https://github.com/eduardo99ja/back-tareas',
+    category: ['react.js', 'mongoDB', 'node.js'],
   },
 ]
 

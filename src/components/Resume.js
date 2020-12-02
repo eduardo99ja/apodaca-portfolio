@@ -6,35 +6,68 @@ const languages = [
   {
     icon: react,
     name: 'JS',
-    level: '45',
+    level: '90',
   },
   {
     icon: react,
-    name: 'HTML',
-    level: '60',
+    name: 'HTML & CSS',
+    level: '90',
+  },
+
+  {
+    icon: react,
+    name: 'React.js',
+    level: '85',
   },
   {
     icon: react,
-    name: 'CSS',
-    level: '80',
+    name: 'Next.js',
+    level: '50',
+  },
+  {
+    icon: react,
+    name: 'Node.js',
+    level: '75',
+  },
+  {
+    icon: react,
+    name: 'MongoDB',
+    level: '85',
   },
 ]
 
 const tools = [
   {
     icon: react,
-    name: 'Figma',
-    level: '85',
+    name: 'Firebase',
+    level: '60',
   },
   {
     icon: react,
     name: 'Adobe XD',
-    level: '45',
+    level: '50',
   },
   {
     icon: react,
-    name: 'GIT',
-    level: '60',
+    name: 'Git',
+    level: '90',
+  },
+  {
+    icon: react,
+    name: 'GitHub',
+    level: '90',
+  },
+]
+const deploys = [
+  {
+    icon: react,
+    name: 'Netlify',
+    level: '100',
+  },
+  {
+    icon: react,
+    name: 'Heroku',
+    level: '95',
   },
 ]
 const resume_variant = {
@@ -62,7 +95,9 @@ const Resume = () => {
           <h4 className='resume-card__heading'>Education</h4>
           <div className='resume-card__body'>
             <h5 className='resume-card__title'>Computer Systems Engineering</h5>
-            <p className='resume-card__name'>Instituto Tecnologico de Toluca</p>
+            <p className='resume-card__name'>
+              Instituto Tecnologico de Toluca{' '}
+            </p>
             <p className='resume-card__details'>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
               nobis?
@@ -72,11 +107,10 @@ const Resume = () => {
         <div className='col-lg-6 resume-card'>
           <h4 className='resume-card__heading'>Experience</h4>
           <div className='resume-card__body'>
-            <h5 className='resume-card__title'>Lorem ipsum dolor sit.</h5>
-            <p className='resume-card__name'>Lorem ipsum dolor sit.</p>
+            <h5 className='resume-card__title'>Freelancer.</h5>
+            <p className='resume-card__name'>Present.</p>
             <p className='resume-card__details'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
-              nobis?
+              I work as a freelancer and developing personal projects.
             </p>
           </div>
         </div>
@@ -95,6 +129,12 @@ const Resume = () => {
           <div className='resume-language__body mt-3'>
             {tools.map(tool => (
               <Bar value={tool} />
+            ))}
+          </div>
+          <h5 className='resume-language__heading'>Deployments</h5>
+          <div className='resume-language__body mt-3'>
+            {deploys.map(deploy => (
+              <Bar value={deploy} />
             ))}
           </div>
         </div>

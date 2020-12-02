@@ -53,7 +53,7 @@ const Sidebar = () => {
       </figure>
       <div className='sidebar__contact'>
         <div className='sidebar__item sidebar__github'>
-          <a href='!#'>
+          <a href='https://github.com/eduardo99ja' target="_blank" rel='noopener noreferrer'>
             <img src={github} alt='github' className='sidebar__icon mr-3' />
             github
           </a>
@@ -63,7 +63,7 @@ const Sidebar = () => {
           Xonacatlán México
         </div>
         <div className='sidebar__item'>eduardo1ja99@gmail.com</div>
-        <div className='sidebar__item'>7291001805</div>
+        <a href='https://wa.link/spulph'  target="_blank" rel='noopener noreferrer' className='sidebar__item'>7291001805</a>
       </div>
       <div className='sidebar__item sidebar__email' onClick={handleContactMe}>
         Get in touch

@@ -6,28 +6,37 @@ import { motion } from 'framer-motion'
 const skills = [
   {
     icon: api,
-    title: 'lorem ipsum dolor sit.',
-    about:
-      ['Lorem ipsum dolor sit, amet consectetur adipisicing elit.',<strong> Voluptates mollitia</strong> ],
+    title: 'Frontend Development',
+    about: [
+      'I can build responsive and scalable webs using',
+      <strong> html, css, react.js</strong>,
+    ],
   },
   {
     icon: api,
-    title: 'lorem ipsum dolor sit.',
-    about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates mollitia',
+    title: 'Backend Development',
+    about: [
+      'I handle SQL and noSQL databases like',
+      <strong> oracle, mysql, mongoDB</strong>,
+    ],
   },
   {
     icon: api,
-    title: 'lorem ipsum dolor sit.',
-    about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates mollitia',
+    title: 'API Development',
+    about: [
+      'I can develop robust REST API using',
+      <strong> node.js, express, mongoDB</strong>,
+    ],
   },
   {
     icon: api,
-    title: 'lorem ipsum dolor sit.',
-    about:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates mollitia',
+    title: 'UI/UX designer',
+    about: [
+      'minimalistic user interface designer using',
+      <strong> adobeXD </strong>,
+    ],
   },
+  
 ]
 const about_variant = {
   hidden: {
@@ -50,10 +59,9 @@ const About = () => {
       animate='visible'
     >
       <h6 className='about__intro'>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
-        mollitia optio architecto, obcaecati excepturi odit asperiores atque
-        quod sed minima aperiam fugit unde, harum recusandae exercitationem.
-        Eligendi hic tempora esse?
+        I am an engineering student in computer systems. I describe myself as
+        someone who is always exploring new technologies and developing software
+        solutions.
       </h6>
       <div className='container about__container'>
         <h6 className='about__heading'>What I offer</h6>

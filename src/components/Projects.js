@@ -63,6 +63,12 @@ const Projects = () => {
           Node
         </div>
         <div
+          className={active === 'firebase' ? 'projects__navbar-active':null}
+          onClick={() => handleFilterCategory('firebase')}
+        >
+          Firebase
+        </div>
+        <div
           className={active === 'vanilla' ? 'projects__navbar-active':null}
           onClick={() => handleFilterCategory('vanilla')}
         >
